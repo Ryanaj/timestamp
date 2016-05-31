@@ -36,7 +36,7 @@ app.get("/timestamp/:time", function (req, res) {
 			res.json({
 			'au Naturel': 'null',
 			'Unix': 'null',
-			'response': parseInt(req.params.time)
+			'response': parseInt(req.params.time, 10)
 		});
 		}
 	});
